@@ -19,8 +19,8 @@ insert into postac values(default,'Drozd','kobieta','2021-11-05', 2);
 update postac set wiek = 88 where id_postaci = 2;
 
 ```
-# ------------- lab 04, Zadanie 2 -------------
-
+# Zadanie 2
+```sql
 #pkt 1
 create table walizka(id_walizki int primary key auto_increment, 
 pojemnosc int unsigned, 
@@ -48,9 +48,9 @@ insert into walizka values(default, 50, default, 2);
 
 select * from walizka;
 
-
-# ------------- lab 04, Zadanie 3 -------------
-
+```
+# Zadanie 3
+```sql
 
 #pkt 1
 create table izba(
@@ -76,10 +76,9 @@ select * from izba;
 # dodac klucz główny do tabeli izba
 alter table izba add primary key(adres_budynku, nazwa_izby);
 
-
-# ------------- lab 04, Zadanie 4 -------------
-
-
+```
+# Zadanie 4
+```sql
 #pkt 1
 create table przetwory(
 id_przetworu int not null auto_increment primary key,
@@ -94,9 +93,10 @@ id_konsumenta int, foreign key(id_konsumenta) references postac(id_postaci)
 insert into przetwory values (default, default, 1, 'bigos', default, 3);
 select * from przetwory;
 
+```
+# Zadanie 5
 
-# ------------- lab 04, Zadanie 5 -------------
-
+```sql
 
 #pkt 1
 insert into postac values (default, 'Andrzej', 'wiking', '1649-09-06', 349);
@@ -138,3 +138,4 @@ delete from izba;
 #pkt 9 
 drop table izba;
 
+```
