@@ -1,6 +1,6 @@
+# lab04
+## Zadanie 1
 ```sql
-# ------------- lab 04, Zadanie 1 -------------
-
 #pkt 1
 create table postac(
 id_postaci int auto_increment primary key, 
@@ -18,7 +18,7 @@ insert into postac values(default,'Drozd','kobieta','2021-11-05', 2);
 #pkt 3
 update postac set wiek = 88 where id_postaci = 2;
 
-
+```
 # ------------- lab 04, Zadanie 2 -------------
 
 #pkt 1
@@ -137,4 +137,4 @@ delete from izba;
 
 #pkt 9 
 drop table izba;
-```
+
