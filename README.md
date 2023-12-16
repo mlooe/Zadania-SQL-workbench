@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> Zadania zostały zrobione przez Wiktora Krasińskiego
+> Zadania zostały zrobione przez Wiktora Krasińskiego.
