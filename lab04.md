@@ -19,7 +19,7 @@ insert into postac values(default,'Drozd','kobieta','2021-11-05', 2);
 update postac set wiek = 88 where id_postaci = 2;
 
 ```
-# Zadanie 2
+## Zadanie 2
 ```sql
 #pkt 1
 create table walizka(id_walizki int primary key auto_increment, 
@@ -49,7 +49,7 @@ insert into walizka values(default, 50, default, 2);
 select * from walizka;
 
 ```
-# Zadanie 3
+## Zadanie 3
 ```sql
 
 #pkt 1
@@ -77,7 +77,7 @@ select * from izba;
 alter table izba add primary key(adres_budynku, nazwa_izby);
 
 ```
-# Zadanie 4
+## Zadanie 4
 ```sql
 #pkt 1
 create table przetwory(
@@ -94,7 +94,7 @@ insert into przetwory values (default, default, 1, 'bigos', default, 3);
 select * from przetwory;
 
 ```
-# Zadanie 5
+## Zadanie 5
 
 ```sql
 
