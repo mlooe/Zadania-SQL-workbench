@@ -1,4 +1,4 @@
-# lab04
+# lab 04
 ## Zadanie 1
 ```sql
 #pkt 1
