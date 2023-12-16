@@ -130,10 +130,13 @@ alter table postac add foreign key(statek) references statek(nazwa_statku);
 #pkt 7
 alter table postac add jaki_Statek varchar(100);
 alter table postac add foreign key (jaki_Statek) references statek(nazwa_statku);
-update postac set jaki_Statek
+
+update postac set jaki_Statek = 'Galileo' where rodzaj = 'wiking';
+
+update postac set jaki_Statek = 'Kanaris' where rodzaj = 'Drozd';
 
 #pkt 8
-delete from izba;
+delete from izba where nazwa_izby = 'spiżarnia';
 
 #pkt 9 
 drop table izba;
