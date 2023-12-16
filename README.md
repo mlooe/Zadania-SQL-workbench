@@ -1,1 +1,2 @@
-`**Zadania zrobione przez Wiktor Krasiński* `
+> [!IMPORTANT]
+> Zadania zostały zrobione przez Wiktora Krasińskiego
