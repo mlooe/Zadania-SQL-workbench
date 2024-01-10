@@ -60,7 +60,15 @@ DELIMITER ;
 call eliksir_sily(1);
 
 #pkt 2
-dokończyć
+DELIMITER $$
+CREATE PROCEDURE wielkie_litery(IN tekst varchar(100))
+BEGIN
+select upper(tekst);
+END
+$$
+DELIMITER ;
+
+call wielkie_litery('Abrakadabra, abrakadabra');
 ```
 
 ## Zadanie 4
@@ -71,7 +79,7 @@ dokończyć
 create table system_alarmowy(id_alarmu int, wiadomosc varchar(100));
 
 #pkt 2
-dokończyć
+
 
 ```
 
@@ -81,8 +89,6 @@ dokończyć
 
 #pkt 1
 dokończyć
-
-
 
 
 #pkt 2
