@@ -95,7 +95,10 @@ group by u.id_wyprawy, w.nazwa;
 
 ```sql
 #pkt 1
-select w.id_wyprawy, s.nazwa, k.nazwa, datediff(w.data_rozpoczecia, k.dataur) as 'data rozpoczecia w dniach' from kreatura k inner join uczestnicy u on u.id_uczestnika=k.idKreatury inner join wyprawa w on w.id_wyprawy=u.id_wyprawy 
-inner join etapy_wyprawy ew on ew.idwyprawy=w.id_wyprawy inner join sektor s on s.id_sektora=ew.sektor where ew.sektor=7;
+select w.id_wyprawy, s.nazwa, k.nazwa, datediff(w.data_rozpoczecia, k.dataur) as 'data rozpoczecia w dniach'
+from kreatura k inner join uczestnicy u on u.id_uczestnika=k.idKreatury
+inner join wyprawa w on w.id_wyprawy=u.id_wyprawy 
+inner join etapy_wyprawy ew on ew.idwyprawy=w.id_wyprawy
+inner join sektor s on s.id_sektora=ew.sektor where ew.sektor=7;
 
 ```
